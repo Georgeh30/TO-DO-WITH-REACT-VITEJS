@@ -11,6 +11,13 @@
     * Choose the variant and accept, in this case React with Js or just React
 ### 2. Install the dependencies of this project that come from node
     * Run the command: npm install
-### 3. Project execution
+### 3. Construction the project
+    * Run the command: npm run build
+### 4. Project execution
     * Run the command: npm run dev
     * Access the route shown in the console
+
+## Useful commands:
+
+### 1. Command to create React structure template
+    rfce
