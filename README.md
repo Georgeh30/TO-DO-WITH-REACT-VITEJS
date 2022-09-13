@@ -1,7 +1,7 @@
 # TO-DO-WITH-REACT-VITEJS
 ## Creation of web application with the React library created from Vite JS
 
-## Pasos para la creacion de App con Vite + React:
+## Steps to create an App with Vite + React:
 
 ### 1. Project creation with the vite js tool
     * Run the command: npm create vite
