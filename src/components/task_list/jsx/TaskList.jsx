@@ -1,32 +1,23 @@
-import { tasks as data } from '../js/tasks';
-import { useState, useEffect } from 'react';
+import TaskCard from '../../task_card/jsx/TaskCard'
 
-const TaskList = () => {
-  const [tasks, setTasks] = useState([]);
+const TaskList = (props) => {
+    const { tasks } = props;
+    
+    if (tasks.length === 0) {
+        return <h1>No existen tareas</h1>
+    }
 
-  useEffect(() => {
-    setTasks(data)
-  }, []) // indicamos que solo la primera vez que se renderiza 
-        // este componente, se ejecute "useEffect"
-
-  if (tasks.length === 0) {
-    return <h1>No existen tareas</h1>
-  }
-  
-  return (
-    <div>
-        {
-          tasks.map(task => {
-            ( 
-              <div key={task.id}>
-                <h1>{task.title}</h1> 
-                <p>{task.description}</p>
-              </div> 
-            )
-          })
-        }
-    </div>
-  )
+    return (
+        <div>
+            {
+                tasks.map(task => 
+                    (
+                        <TaskCard key={task.id} task={task} />
+                    )
+                )
+            }
+        </div>
+    )
 };
 
 export default TaskList
