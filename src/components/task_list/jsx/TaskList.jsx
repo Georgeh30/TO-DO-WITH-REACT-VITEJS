@@ -1,7 +1,7 @@
 import TaskCard from '../../task_card/jsx/TaskCard'
 
 const TaskList = (props) => {
-    const { tasks } = props;
+    const { tasks, deleteTask } = props;
     
     if (tasks.length === 0) {
         return <h1>No existen tareas</h1>
@@ -12,7 +12,7 @@ const TaskList = (props) => {
             {
                 tasks.map(task => 
                     (
-                        <TaskCard key={task.id} task={task} />
+                        <TaskCard key={task.id} task={task} deleteTask={deleteTask} />
                     )
                 )
             }
