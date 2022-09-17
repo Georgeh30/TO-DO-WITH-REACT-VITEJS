@@ -15,21 +15,23 @@ const TaskForm = () => {
 
     return (
         <div className='max-w-md mx-auto'>
-            <form onSubmit={handleSubmit} className="bg-slate-800 p-10 mb-4">
-                <h1 className='text-2xl font-bold text-white mb-3'>Create a new task:</h1>
-                <input placeholder='Write your task'
+            <form onSubmit={handleSubmit} className="bg-slate-800 p-10 mb-4 rounded-md">
+                <h1 className='text-2xl font-bold text-white mb-3'>New task:</h1>
+                <input
+                    placeholder='Task title'
                     onChange={(e) => setTitle(e.target.value)}
                     value={title}
-                    className="bg-slate-300 p-3 w-full mb-2"
+                    className="bg-slate-300 p-3 w-full mb-2 rounded-md border-2 border-blue-500 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
                     autoFocus
                 />
-                <textarea placeholder='Write the description'
+                <textarea
+                    placeholder='Description'
                     onChange={(e) => setDescription(e.target.value)}
-                    className="bg-slate-300 p-3 w-full mb-2"
+                    className="bg-slate-300 p-3 w-full mb-2 rounded-md border-2 border-blue-500 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500"
                     value={description}
                 />
                 <button
-                    className='bg-indigo-500 px-3 py-1 text-white hover:bg-indigo-400 rounded-md'
+                    className='bg-indigo-500 px-3 py-1 text-white hover:bg-indigo-400 rounded-md border-indigo-500 border-2 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500'
                 >
                     Save
                 </button>

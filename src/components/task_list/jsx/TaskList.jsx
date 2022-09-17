@@ -7,11 +7,14 @@ const TaskList = () => {
     
     if (tasks.length === 0) {
         return (
-            <h1 
-                className='text-white text-4xl font-bold text-center'
-            >
-                There are no tasks
-            </h1>
+            <div className='max-w-md mx-auto'>
+                <h1 
+                    className='text-orange-500 text-2xl text-center bg-orange-200 rounded-md pt-1 pb-2 drop-shadow-2xl border-2 border-orange-500'
+                >
+                    THERE ARE NO TASKS
+                </h1>
+            </div>
+            
         )
     }
 

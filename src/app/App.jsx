@@ -5,7 +5,7 @@ import TaskList from '../components/task_list/jsx/TaskList'
 const App = () => {
     return (
         <>
-            <main className='bg-zinc-900 h-screen'>
+            <main className='bg-neutral-800 h-screen'>
                 <div className='p-10 pt-2 content-center'>
                     <TitleApp />
                     <TaskForm />
