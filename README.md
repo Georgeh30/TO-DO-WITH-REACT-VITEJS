@@ -69,7 +69,7 @@
     git push origin master
 ### 3. Install [gh pages](https://www.npmjs.com/package/gh-pages), which will help us to display static files that are already configured
     npm install gh-pages --save-dev
-### 4. Agregar la propiedad `deploy` dentro del objeto de la propiedad `scripts` en el archivo `package.json`
+### 4. Add the `deploy` property inside the `scripts` property object in the `package.json` file
     "scripts": {
         "deploy": "gh-pages -d build"
     }
