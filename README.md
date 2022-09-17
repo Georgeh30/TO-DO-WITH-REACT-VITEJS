@@ -45,3 +45,15 @@
     @tailwind components;
     @tailwind utilities;
 
+## Steps to install [React Icons](https://react-icons.github.io/react-icons/) with Vite:
+
+### 1. Installation (for standard modern project)
+    npm install react-icons --save
+## 2. Usage ej:
+    import { FaBeer } from 'react-icons/fa';
+
+    class Question extends React.Component {
+        render() {
+            return <h3> Lets go for a <FaBeer />? </h3>
+        }
+    }
