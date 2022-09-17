@@ -31,7 +31,6 @@
     ```
 
 ### 2. Configure your template paths. Add the paths to all of your template files in your `tailwind.config.cjs` file.
-    ```cjs
     module.exports = {
         `content: [
             "./index.html",
@@ -42,12 +41,9 @@
         },
         plugins: [],
     }
-    ```
 
 ### 3. Add the Tailwind directives to your CSS\Add the `@tailwind` directives for each of Tailwind’s layers to your `./src/index.css` file.
-    ```css
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-    ```
 
