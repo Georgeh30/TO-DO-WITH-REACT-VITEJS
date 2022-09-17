@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { TaskContext } from '../../../contexts/task_context/jsx/TaskContext';
 
-const TaskForm = (props) => {
-    const { createTask } = props;
+const TaskForm = () => {
+    const { createTask } = useContext(TaskContext);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
 

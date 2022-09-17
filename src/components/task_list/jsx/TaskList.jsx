@@ -1,7 +1,9 @@
-import TaskCard from '../../task_card/jsx/TaskCard'
+import { useContext } from 'react';
+import { TaskContext } from '../../../contexts/task_context/jsx/TaskContext';
+import TaskCard from '../../task_card/jsx/TaskCard';
 
-const TaskList = (props) => {
-    const { tasks, deleteTask } = props;
+const TaskList = () => {
+    const { tasks } = useContext(TaskContext);
     
     if (tasks.length === 0) {
         return <h1>No existen tareas</h1>
@@ -12,7 +14,7 @@ const TaskList = (props) => {
             {
                 tasks.map(task => 
                     (
-                        <TaskCard key={task.id} task={task} deleteTask={deleteTask} />
+                        <TaskCard key={task.id} task={task} />
                     )
                 )
             }

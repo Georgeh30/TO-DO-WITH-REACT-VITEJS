@@ -1,5 +1,9 @@
+import { useContext } from "react";
+import { TaskContext } from "../../../contexts/task_context/jsx/TaskContext";
+
 const TaskCard = (props) => {
-    const { task, deleteTask } = props;
+    const { task } = props;
+    const { deleteTask } = useContext(TaskContext);
 
     return (
         <div>
