@@ -10,7 +10,7 @@ const TaskList = () => {
             <h1 
                 className='text-white text-4xl font-bold text-center'
             >
-                No existen tareas
+                There are no tasks
             </h1>
         )
     }
