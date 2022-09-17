@@ -26,7 +26,7 @@
 
 ## Steps to install [Tailwind](https://tailwindcss.com/docs/guides/vite) with Vite:
 
-### 1. Install Tailwind CSS. Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.cjs and postcss.config.cjs.
+### 1. Install Tailwind CSS. Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both `tailwind.config.cjs` and `postcss.config.cjs`.
     npm install -D tailwindcss postcss autoprefixer
     npx tailwindcss init -p
 ### 2. Configure your template paths. Add the paths to all of your template files in your `tailwind.config.cjs` file.
