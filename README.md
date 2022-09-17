@@ -32,10 +32,10 @@
 
 ### 2. Configure your template paths. Add the paths to all of your template files in your `tailwind.config.cjs` file.
     module.exports = {
-        `content: [
-            "./index.html",
-            "./src/**/*.{js,ts, jsx,tsx}",
-        ],`
+        `content: [`
+            `"./index.html",`
+            `"./src/**/*.{js,ts, jsx,tsx}",`
+        `],`
         \theme: {
             extend: {},
         },
