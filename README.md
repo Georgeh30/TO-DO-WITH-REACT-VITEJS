@@ -1,12 +1,12 @@
 # TO-DO-WITH-REACT-VITEJS
 ## Creation of web application with the React library created from Vite JS
 
-## Steps to create an App with Vite + React:
+## Steps to create an App with [Vite](https://vitejs.dev/guide/) + React:
 
 ### 1. Project creation with the vite js tool
     npm create vite
-### 1.1 If it is the first time, 
-    - you must type (Y) and accept
+### 1.1 If it is the first time 
+    - You must type (Y) and accept
     - Assign Project Name and accept
     - Choose Framework and accept, in this case it will be (React)
     - Choose the variant and accept, in this case React with Js or just React
@@ -27,10 +27,8 @@
 ## Steps to install [Tailwind](https://tailwindcss.com/docs/guides/vite) with Vite:
 
 ### 1. Install Tailwind CSS. Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.cjs and postcss.config.cjs.
-    ```
     npm install -D tailwindcss postcss autoprefixer
     npx tailwindcss init -p
-    ```
 ### 2. Configure your template paths. Add the paths to all of your template files in your `tailwind.config.cjs` file.
     module.exports = {
         content: [
