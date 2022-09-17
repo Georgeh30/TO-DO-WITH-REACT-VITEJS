@@ -60,7 +60,7 @@
 
 ## Steps for the deployment of the App (TO DO) in [GitHub Pages](https://pages.github.com/):
 
-### 1. Creating a new [github](https://github.com/new) repository
+### 1. Creating a new [github](https://github.com/new) repository as `public`
 ### 2. Upload the local project to the newly created github repository
     git init
     git add .
@@ -114,3 +114,4 @@
     npm run build
 ### 8. We publish the project [TO-DO-WITH-REACT-VITEJS](https://Georgeh30.github.io/TO-DO-WITH-REACT-VITEJS/) in GitHub Page by executing the following command
     npm run deploy
+### 9. We go to the GitHub page of our repository, entering the `Settings` tab and the `Pages` option, in `Branch` we select `gh-pages` and `/root`, click on the `Save` button, wait a minute so that the address where our project was published appears at the top.
