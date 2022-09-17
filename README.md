@@ -21,3 +21,33 @@
 
 ### 1. Command to create React structure template
     rfce
+
+## Steps to install [Tailwind](https://tailwindcss.com/docs/guides/vite) with Vite:
+
+### 1. Install Tailwind CSS \ Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.cjs and postcss.config.cjs.
+    ```
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+    ```
+
+### 2. Configure your template paths. Add the paths to all of your template files in your `tailwind.config.cjs` file.
+    ```cjs
+    module.exports = {
+        `content: [
+            "./index.html",
+            "./src/**/*.{js,ts, jsx,tsx}",
+        ],`
+        \theme: {
+            extend: {},
+        },
+        plugins: [],
+    }
+    ```
+
+### 3. Add the Tailwind directives to your CSS\Add the `@tailwind` directives for each of Tailwind’s layers to your `./src/index.css` file.
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ```
+
