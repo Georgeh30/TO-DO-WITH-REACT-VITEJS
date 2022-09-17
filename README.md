@@ -115,3 +115,10 @@
 ### 8. We publish the project [TO-DO-WITH-REACT-VITEJS](https://Georgeh30.github.io/TO-DO-WITH-REACT-VITEJS/) in GitHub Page by executing the following command
     npm run deploy
 ### 9. We go to the GitHub page of our repository, entering the `Settings` tab and the `Pages` option, in `Branch` we select `gh-pages` and `/root`, click on the `Save` button, wait a minute so that the address where our project was published appears at the top.
+
+## Steps to update project deployed to GitHub Pages:
+
+### 1. Run command to build the project
+    npm run build
+### 2. Run command for project update deployment
+    npm run deploy
