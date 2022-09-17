@@ -9,9 +9,9 @@ export const tasks = [
         title: 'Second task',
         description: 'Second task description'
     },
-    {
+    /* {
         id: 2,
         title: 'Thirst task',
         description: 'Thirst task description'
-    },
+    }, */
 ]
