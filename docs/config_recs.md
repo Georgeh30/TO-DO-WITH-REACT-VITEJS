@@ -1,3 +1,4 @@
+# PASOS PARA CONFIGURAR EL PROYECTO COMPLETO PARA QUE FUNCIONE EN SERVIDOR APACHE PHP
 ## Para un proyecto ReactJS:
 
 #### 1. Abrir el archivo package.json en la raíz del proyecto ReactJS.
@@ -39,3 +40,8 @@
 #### 9. Guardar el archivo ".htaccess".
 #### 10. Iniciar el servidor de Apache en XAMPP.
 #### 11. Abrir el navegador web y acceder a la URL http://localhost/NOMBRE_DEL_PROYECTO/. El proyecto ViteJS debería cargarse correctamente sin necesidad de agregar "dist" en la URL.
+
+
+### NOTA: AL SUBIR EL PROYECTO A PRODUCCION O EN EL MISMO LOCAL, AL MOMENTO DE CONSTRUIR EL PROYECTO, NO ES NECESARIO SUBIR AL SERVIDOR APACHE PHP TODO EL PROYECTO
+### SOLO SE NECESITA SUBIR EL CONTENIDO DE LA CARPETA CONSTRUIDA, YA SEA "build" o "dist", Y SOLO CON CREAR UNA CARPETA CON EL NOMBRE DEL PROYECTO Y METER EL CONTENIDO EN EL,
+### SOLO ESA CARPETA NUEVA ES LA QUE SE SUBE Y FUNCIONARA DE IGUAL FORMA.
